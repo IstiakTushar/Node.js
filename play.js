@@ -53,5 +53,17 @@ const hobbies = ['Music', 'Books', 'Programming', 'Movies', 'Cooking'];
 //     console.log(hobby);
 // }
 
-console.log(hobbies.map(hobby => 'Hobby: ' + hobby));
+
+// Output
+// console.log(hobbies.map(hobby => 'Hobby: ' + hobby));
+// console.log(hobbies);
+
+
+// Arrays Object Reference Type
+hobbies.push('Learning');
+
+// Output
 console.log(hobbies);
+
+
+// Understanding Spread Rest Operator
