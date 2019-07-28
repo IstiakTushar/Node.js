@@ -26,10 +26,23 @@ console.log(summarizeUser(name, age, hasHobbies));
 // const addOne = a => a + 1;
 
 // IF We have no argument then we have specify the ()
-const addRandom = () => 1 + 2;
+// const addRandom = () => 1 + 2;
 
 
 // Output
 // console.log(add(2, 2));
 // console.log(addOne(1));
-console.log(addRandom());
+// console.log(addRandom());
+
+
+// Working with Objects & Methods
+const person = {
+    name: 'Istiak',
+    age: 26,
+    greet() {
+        console.log('Hi I am ' + this.name)
+    }
+};
+
+// Output
+person.greet();
