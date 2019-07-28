@@ -44,6 +44,9 @@ const person = {
     }
 };
 
+const copiedPerson = { ...person };
+console.log(copiedPerson);
+
 // Output
 // person.greet();
 
@@ -62,8 +65,15 @@ const hobbies = ['Music', 'Books', 'Programming', 'Movies', 'Cooking'];
 // Arrays Object Reference Type
 hobbies.push('Learning');
 
-// Output
-console.log(hobbies);
-
 
 // Understanding Spread Rest Operator
+const copiedArray = [...hobbies];
+
+// Output
+console.log(copiedArray);
+
+const toArray = (...args) => {
+    return args;
+};
+
+console.log(toArray(1, 2, 3, 4));
