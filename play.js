@@ -44,36 +44,52 @@ const person = {
     }
 };
 
-const copiedPerson = { ...person };
-console.log(copiedPerson);
 
-// Output
-// person.greet();
+// Destructuring
+const printName = ({ name }) => {
+    console.log(name);
+}
 
-// Arrays & Arrays Method
+printName(person);
+
+// const { name, age } = person;
+// console.log(name, age);
+
+
+// const copiedPerson = { ...person };
+// console.log(copiedPerson);
+
+// // Output
+// // person.greet();
+
+// // Arrays & Arrays Method
 const hobbies = ['Music', 'Books', 'Programming', 'Movies', 'Cooking'];
-// for (let hobby of hobbies) {
-//     console.log(hobby);
-// }
+const [hobby1, hobby2] = hobbies;
+
+console.log(hobby1, hobby2);
+
+// // for (let hobby of hobbies) {
+// //     console.log(hobby);
+// // }
 
 
-// Output
-// console.log(hobbies.map(hobby => 'Hobby: ' + hobby));
-// console.log(hobbies);
+// // Output
+// // console.log(hobbies.map(hobby => 'Hobby: ' + hobby));
+// // console.log(hobbies);
 
 
-// Arrays Object Reference Type
-hobbies.push('Learning');
+// // Arrays Object Reference Type
+// hobbies.push('Learning');
 
 
-// Understanding Spread Rest Operator
-const copiedArray = [...hobbies];
+// // Understanding Spread Rest Operator
+// const copiedArray = [...hobbies];
 
-// Output
-console.log(copiedArray);
+// // Output
+// console.log(copiedArray);
 
-const toArray = (...args) => {
-    return args;
-};
+// const toArray = (...args) => {
+//     return args;
+// };
 
-console.log(toArray(1, 2, 3, 4));
+// console.log(toArray(1, 2, 3, 4));
