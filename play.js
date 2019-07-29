@@ -93,3 +93,28 @@ console.log(hobby1, hobby2);
 // };
 
 // console.log(toArray(1, 2, 3, 4));
+
+// Async Code Promise
+const fechData = () => {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Done!');
+        }, 1500);
+    });
+
+    return promise;
+}
+// Call back function which is execute later than others
+setTimeout(() => {
+    console.log('Timer is done!');
+    fechData().then(text => {
+        console.log(text);
+        return fechData();
+    })
+        .then(text2 => {
+            console.log(text2);
+        })
+}, 2000);
+
+console.log('Hello!');
+console.log('Hi!');
